@@ -106,3 +106,51 @@ body{
     font-size: 15px;
     margin-top: 5px;
 }
+
+/* Adding media query for responsiveness */
+
+@media (max-width: 1200px) {
+    .card-cover {
+        width: 40%;
+    }
+    .bio h1 {
+        font-size: 18px;
+    }
+    .bio p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-cover {
+        width: 60%;
+    }
+    .image-holder img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+    }
+    .follow-like-photo {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-cover {
+        width: 90%;
+        height: auto;
+    }
+    .bio h1 {
+        font-size: 16px;
+    }
+    .bio p {
+        font-size: 14px;
+    }
+    .image-holder img {
+        width: 80%;
+        height: auto;
+    }
+}
